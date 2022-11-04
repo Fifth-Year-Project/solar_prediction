@@ -5,10 +5,10 @@ conn = http.client.HTTPSConnection("api-metoffice.apiconnect.ibmcloud.com")
 headers = {
     'X-IBM-Client-Id': "ab2c780850d812ac7decc5dc32fcbfff",
     'X-IBM-Client-Secret': "c2c62ec4415fae99864cd6a25be630e9",
-    'accept': "application/json"
+    'accept': "application/jsson"
     }
 
-conn.request("GET", "/v0/forecasts/point/hourly?excludeParameterMetadata=REPLACE_THIS_VALUE&includeLocationName=0-4-14&latitude=56.187094&longitude=-3.962555", headers=headers)
+conn.request("GET", "/v0/forecasts/point/hourly?excludeParameterMetadata=REPLACE_THIS_VALUE&includeLocationName=REPLACE_THIS_VALUE&latitude=56.187094&longitude=-3.962555", headers=headers)
 
 res = conn.getresponse()
 data = res.read()
