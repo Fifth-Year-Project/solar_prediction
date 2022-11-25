@@ -1,0 +1,7 @@
+requests
+xarray
+datetime
+simplejson
+cfgrib
+eccodes
+ecmwflibs
